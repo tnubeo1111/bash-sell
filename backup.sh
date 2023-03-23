@@ -16,7 +16,7 @@ BACKUP_DIR="/home/test/backups"
 # Tên tập tin sao lưu
 NAME_FILE="backup_$(date +"%y.%m.%d")_117.tar.gz"
 
-# Kiểm tra thư mục có ở trong địa chỉ ip_S không
+# Lấy địa chỉ IP_Source
 IP_S=$(ip a | grep 192.168.56.117 | awk -F" " '{print $2}' | awk -F"/" '{print $1}') 
 
 # Tạo thư mục sap lưu (nếu chưa tồn tại)
